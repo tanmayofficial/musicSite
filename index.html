@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Your Favourite Music On - Bongsta Beatz</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="logo">
+        <img src="./images/logo.png" alt="Spotify logo" />
+      </span>
+      <div class="menuList">
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <a href="#" class="menuIcon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+        <!-- <i class="fa-solid fa-user" onclick="toggleMenu()"></i> -->
+      </a>
+    </nav> 
+
+    <div class="container">
+      <div class="songList">
+        <h1>Top Songs Lists</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Saami Saami - Sunidhi Chauhan</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="0"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Srivalli - Javed Ali</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="1"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Babaji Ki Booti - Sachin & Jigar</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="2"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Dilbar Mere - Sanam</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="3"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Galliyan - Ek Villain</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="4"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Phir Kabhi - MS Dhoni</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="5"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Badtameez Dil - Yeh Jawani Hai Diwani</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="6"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Dhinka_chika - Ready</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="7"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Nagin Dance - Bajatey Raho</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="8"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+          <div class="songItem">
+            <img alt="srivalli" />
+            <span class="songName">Tera Naam Japdi Phiran - Cocktail</span>
+            <span class="songListPlay">
+              <span class="timestamp"
+                >03:44
+                <i
+                  id="9"
+                  class="fa-regular songItemPlay fa-2x fa-circle-play"
+                ></i>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        max="100"
+        value="0"
+      />
+      <div class="icons">
+        <!-- fontAwesome icons -->
+
+        <i class="fa-solid fa-3x fa-backward" id="previous"></i>
+        <i class="fa-regular fa-4x fa-circle-play" id="masterPlay"></i>
+        <i class="fa-solid fa-3x fa-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="./images/play.gif" alt="gif" width="50px" id="gif" />
+        <span id="masterSongName"> Saami Saami - Sunidhi Chauhan </span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d43b4adf01.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

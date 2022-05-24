@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Your Favourite Music On - Bongsta Beatz</title>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="logo">
+            <img src="./images/logo.png" alt="Spotify logo" />
+        </span>
+        <div class="menuList">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </div>
+        <a href="#" class="menuIcon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+            <!-- <i class="fa-solid fa-user" onclick="toggleMenu()"></i> -->
+        </a>
+    </nav>
+
+    <div class="container">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="india">India</option>
+                        <option value="russia">Russia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0" />
+        <div class="icons">
+            <!-- fontAwesome icons -->
+
+            <i class="fa-solid fa-3x fa-backward" id="previous"></i>
+            <i class="fa-regular fa-4x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="./images/play.gif" alt="gif" width="50px" id="gif" />
+            <span id="masterSongName"> Saami Saami - Sunidhi Chauhan </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d43b4adf01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
